@@ -113,7 +113,7 @@
 }
 
 .about-us-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat's;
   font-size: 1.25rem;
   font-weight: 400;
   text-align: start;
@@ -122,7 +122,7 @@
 }
 
 .about-us-heading {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat's;
   color: #F07C1B;
   font-size: 3rem;
   font-weight: 500;
@@ -131,7 +131,7 @@
 }
 
 .about-us-paragraph {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat's;
   font-size: 1rem;
   font-weight: 300;
   text-align: justify;
@@ -345,5 +345,77 @@
       margin-right: 0; 
       margin-left: 1em;
       text-align: justify; 
+  }
+}
+
+.header-container {
+  background: linear-gradient(to right, #182542, #303E64);
+  display: flex;
+  align-items: flex-start;
+  padding: 50px 0;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.header-text {
+  padding-left: 150px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start;
+  z-index: 5;
+  text-align: center;
+}
+
+.header-title {
+  font-family: 'montserrat'; 
+  font-size: 5rem; 
+  font-weight: 200; 
+  color: white;
+  margin-top: 200px;
+  line-height: 1;
+}
+
+.header-subtitle {
+  font-family: 'montserrat'; 
+  font-size: 5rem; 
+  font-weight: 200; 
+  color: white; 
+  line-height: 1;
+}
+
+.header-rif {
+  font-family: 'montserrat'; 
+  font-size: 1rem; 
+  font-weight: 400; 
+  color: #F07C1B;
+}
+
+.header-image {
+  position: absolute; 
+  right: 0; 
+  bottom: -135px; 
+  width: auto; 
+  height: 800px; 
+  z-index: 4; 
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .header-title, .header-subtitle {
+      font-size: 3rem; 
+  }
+  
+  .header-rif {
+      font-size: 0.8rem; 
+  }
+
+  .header-container {
+      padding: 20px 0; 
+  }
+  .header-text {
+    padding-left: 1em;
   }
 }
