@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
+import Header from  './components/Header';
+import FindUs from './pages/FindUs';
+import Footer from './components/Footer';
+import Services from './pages/Services';
+import CustomNavBar from './components/CustomNavBar';
+import { Element } from 'react-scroll';
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+            <CustomNavBar />
+            <Element name="home">
+                <Header />
+            </Element>
+            <Element name="aboutus">
+                <AboutUs />
+            </Element>
+            <Element name="services">
+                <Services />
+            </Element>
+            <Element name="contact">
+                <Contact />
+            </Element>
+            <FindUs/>
+            <Footer />
     </div>
   );
 }
